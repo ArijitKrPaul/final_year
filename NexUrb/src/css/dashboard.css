@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#card-area{
+    background-color: antiquewhite;
+    height: 30vh;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#notice-board{
+    height: 50vh;
+    display: flex;
+    background-color:antiquewhite;
+    justify-content: center;
+    padding-bottom: 30px;
+    
+}
+
+#notice-area{
+    height: 50vh;
+    width: 80vw;
+
+}
+.cards{
+    background-color:white;
+    height: 200px;
+    width: 250px;
+    margin: 0px 15px;
+}
+
+.btns-area{
+    justify-content: center;
+}
+
+.btns{
+    color: black;
+    font-size: 15px;
+}
+
+.btns:hover{
+    cursor:pointer;
+    background-color:#6b46a6;
+    color: white;
+}
