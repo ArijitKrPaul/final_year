@@ -4,7 +4,7 @@ html, body {
     padding: 0;
 }
 
-#card-area{
+#home-card-area{
     background-color: antiquewhite;
     height: 30vh;
     padding-top: 40px;
@@ -13,36 +13,40 @@ html, body {
 }
 
 #notice-board{
-    height: 50vh;
+    height: 51vh;
     display: flex;
     background-color:antiquewhite;
     justify-content: center;
     padding-bottom: 30px;
-    
+    text-align: left;
 }
 
 #notice-area{
     height: 50vh;
-    width: 80vw;
-
+    width: 50vw;
+    border-radius: 10px;
+    border:2px solid #6b46a6;
 }
+
 .cards{
     background-color:white;
     height: 200px;
     width: 250px;
     margin: 0px 15px;
+    border-radius: 15px;
+    /* border:2px solid #6b46a6; */
 }
 
-.btns-area{
-    justify-content: center;
+.dashboard-btns-area{
+    justify-content: center;   
 }
 
-.btns{
-    color: black;
+.dashboard-btns{
     font-size: 15px;
+    width: 180px;
 }
 
-.btns:hover{
+.dashboard-btns:hover{
     cursor:pointer;
     background-color:#6b46a6;
     color: white;

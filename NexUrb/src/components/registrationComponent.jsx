@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import "../css/registration.css";
 import HeaderComponent from "./HeaderComponent";
 import FooterComponent from "./footerComponent";
+import { useNavigate } from "react-router-dom";
 
 export default function RegistrationComponent() {
+  const navigate = useNavigate();
   const [values, setValues] = useState({
     firstname: "",
     lastname: "",
@@ -24,9 +26,10 @@ export default function RegistrationComponent() {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
+    // e.preventDefault();
     console.log(values);
+    navigate("/home");
   };
 
   return (
@@ -174,7 +177,9 @@ export default function RegistrationComponent() {
           >
             Reset
           </button>
-          <button type="submit">Submit</button>
+          <button type="submit" onClick={handleSubmit}>
+            Submit
+          </button>
         </form>
       </div>
       <FooterComponent />

@@ -1,21 +1,27 @@
+import "../css/dashboard.css";
 import FooterComponent from "./footerComponent";
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import HeaderComponent from "./HeaderComponent";
 import Divider from "@mui/material/Divider";
-import "../css/dashboard.css";
+import { useNavigate } from "react-router-dom";
 
 export default function DashboardComponent() {
+  const navigate = useNavigate();
+
+  const changeproject = () => {
+    navigate("/home/project");
+  };
+
   return (
     <div>
       <HeaderComponent />
       <div>
-        <div id="card-area">
+        <div id="home-card-area">
           <Card sx={{ maxWidth: 345 }} className="cards">
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -27,8 +33,12 @@ export default function DashboardComponent() {
               </Typography>
             </CardContent>
             <Divider />
-            <CardActions className="btns-area">
-              <Button size="small" className="btns">
+            <CardActions className="dashboard-btns-area">
+              <Button
+                size="small"
+                className="dashboard-btns"
+                onClick={changeproject}
+              >
                 ADD PROJECT
               </Button>
             </CardActions>
@@ -44,8 +54,8 @@ export default function DashboardComponent() {
               </Typography>
             </CardContent>
             <Divider />
-            <CardActions className="btns-area">
-              <Button size="small" className="btns">
+            <CardActions className="dashboard-btns-area">
+              <Button size="small" className="dashboard-btns">
                 MANAGE
               </Button>
             </CardActions>
@@ -61,8 +71,8 @@ export default function DashboardComponent() {
               </Typography>
             </CardContent>
             <Divider />
-            <CardActions className="btns-area">
-              <Button size="small" className="btns">
+            <CardActions className="dashboard-btns-area">
+              <Button size="small" className="dashboard-btns">
                 Learn More
               </Button>
             </CardActions>
@@ -78,8 +88,8 @@ export default function DashboardComponent() {
               </Typography>
             </CardContent>
             <Divider />
-            <CardActions className="btns-area">
-              <Button size="small" className="btns">
+            <CardActions className="dashboard-btns-area">
+              <Button size="small" className="dashboard-btns">
                 Contact Departments
               </Button>
             </CardActions>
@@ -95,8 +105,8 @@ export default function DashboardComponent() {
               </Typography>
             </CardContent>
             <Divider />
-            <CardActions className="btns-area">
-              <Button size="small" className="btns">
+            <CardActions className="dashboard-btns-area">
+              <Button size="small" className="dashboard-btns">
                 JOIN
               </Button>
             </CardActions>
@@ -113,10 +123,15 @@ export default function DashboardComponent() {
                 component="div"
                 color="primary"
                 gutterBottom
+                fontSize={"30px"}
               >
                 Notice Board
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                fontSize={"20px"}
+              >
                 • <b>Exam Alert:</b> Semester exams start Sept 10.
                 <br />• <b>Assignment:</b> AI/ML Project submission deadline is
                 Aug 31.

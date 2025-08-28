@@ -1,4 +1,4 @@
-import HeaderComponent from "./HeaderComponent";
+import "../css/header.css";
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -10,6 +10,7 @@ import {
   Select,
   Stack,
   Box,
+  Toolbar,
 } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -99,8 +100,16 @@ export default function ProjectComponent() {
   };
   return (
     <div>
-      <HeaderComponent />
-      <div class="container">
+      <Toolbar id="ProjectNavbar">
+        <p>NexUrb</p>
+        <FontAwesomeIcon
+          icon={faCirclePlus}
+          size="1x"
+          id="addButton"
+          onClick={handleOpen}
+        />
+      </Toolbar>
+      <div class="projectcontainer">
         <div class="search-area">
           <FormControl fullWidth variant="filled">
             <InputLabel>State</InputLabel>
@@ -137,7 +146,7 @@ export default function ProjectComponent() {
 
         <div class="card-area">
           <Card sx={{ maxWidth: 950 }}>
-            <CardActionArea>
+            <CardActionArea component="div">
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Lizard
@@ -155,7 +164,7 @@ export default function ProjectComponent() {
             </CardActionArea>
           </Card>
           <Card sx={{ maxWidth: 950 }}>
-            <CardActionArea>
+            <CardActionArea component="div">
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Lizard
@@ -173,7 +182,7 @@ export default function ProjectComponent() {
             </CardActionArea>
           </Card>
           <Card sx={{ maxWidth: 950 }}>
-            <CardActionArea>
+            <CardActionArea component="div">
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   Lizard
@@ -191,12 +200,7 @@ export default function ProjectComponent() {
             </CardActionArea>
           </Card>
         </div>
-        <FontAwesomeIcon
-          icon={faCirclePlus}
-          size="3x"
-          id="addButton"
-          onClick={handleOpen}
-        />
+
         <Backdrop
           sx={(theme) => ({ color: "black", zIndex: theme.zIndex.drawer + 1 })}
           open={open}
