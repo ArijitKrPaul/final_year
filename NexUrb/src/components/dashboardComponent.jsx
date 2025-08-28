@@ -20,7 +20,7 @@ export default function DashboardComponent() {
   return (
     <div>
       <HeaderComponent />
-      <div>
+      <div className="main-container">
         <div id="home-card-area">
           <Card sx={{ maxWidth: 345 }} className="cards">
             <CardContent>

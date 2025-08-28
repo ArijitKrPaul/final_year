@@ -12,6 +12,9 @@ html, body {
     justify-content: center;
 }
 
+.main-container{
+    margin-bottom: 60px;
+}
 #notice-board{
     height: 51vh;
     display: flex;
