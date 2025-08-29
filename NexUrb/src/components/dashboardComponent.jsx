@@ -17,6 +17,10 @@ export default function DashboardComponent() {
     navigate("/home/project");
   };
 
+  const changeInventory = () => {
+    navigate("/home/inventory");
+  };
+
   return (
     <div>
       <HeaderComponent />
@@ -55,7 +59,11 @@ export default function DashboardComponent() {
             </CardContent>
             <Divider />
             <CardActions className="dashboard-btns-area">
-              <Button size="small" className="dashboard-btns">
+              <Button
+                size="small"
+                className="dashboard-btns"
+                onClick={changeInventory}
+              >
                 MANAGE
               </Button>
             </CardActions>

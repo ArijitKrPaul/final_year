@@ -1,0 +1,28 @@
+.inventory-container{
+    width: 80vw;
+    margin: 25px auto;
+    margin-bottom: 50px;
+    height: 90vh;
+}
+
+.Icon{
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#updateItem{
+    background-color: white;
+    width: 20vw;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.inventory-form-button{
+    align-self: center;
+    color: black;
+}
+.inventory-form-button:hover{
+    background-color: black;
+    color: white;
+}

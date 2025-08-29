@@ -4,6 +4,7 @@ import DashboardComponent from "./components/dashboardComponent";
 import ProjectComponent from "./components/projectComponent";
 import RegistrationComponent from "./components/registrationComponent";
 import Login from "./components/loginComponent";
+import InventoryComponent from "./components/inventory";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -23,8 +24,11 @@ export default function App() {
       path: "/home/project",
       element: <ProjectComponent />,
     },
+    {
+      path: "/home/inventory",
+      element: <InventoryComponent />,
+    },
   ]);
-
   return (
     <div className="App">
       <RouterProvider router={router} />
