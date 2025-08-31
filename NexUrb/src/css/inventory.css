@@ -12,7 +12,14 @@
 
 #updateItem{
     background-color: white;
-    width: 20vw;
+    width: 30vw;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+#DelItem{
+    background-color: white;
+    width: 30vw;
     margin: 20px auto;
     padding: 20px;
     border-radius: 5px;
@@ -25,4 +32,11 @@
 .inventory-form-button:hover{
     background-color: black;
     color: white;
+}
+.error{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+
 }
