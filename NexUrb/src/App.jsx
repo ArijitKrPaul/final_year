@@ -5,11 +5,16 @@ import ProjectComponent from "./components/projectComponent";
 import RegistrationComponent from "./components/registrationComponent";
 import Login from "./components/loginComponent";
 import InventoryComponent from "./components/inventory";
+import HomeComponent from "./components/home";
 
 export default function App() {
   const router = createBrowserRouter([
     {
       path: "/",
+      element: <HomeComponent />,
+    },
+    {
+      path: "/login",
       element: <Login />,
     },
     {
