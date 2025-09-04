@@ -1,6 +1,20 @@
 import "../css/home.css";
+import project from "../assets/1.jpg";
+import inventory from "../assets/3.jpg";
+import earth from "../assets/2.mp4";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 
 export default function HomeComponent() {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/login");
+  };
+  const handleRegistration = () => {
+    navigate("/register");
+  };
+
   return (
     <div>
       {/* Main container */}
@@ -22,25 +36,24 @@ export default function HomeComponent() {
             zIndex: -1,
           }}
         >
-          <source src="/img/2.mp4" type="video/mp4" />
+          <source src={earth} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         {/* Navigation Bar */}
-        <nav className="navbar">
+        <nav className="homeNavbar">
           <div className="icon">
             <h2 className="logo">NexUrb</h2>
           </div>
 
           <div className="menu">
-            <ul>
-              <li>
-                <a href="#">Login</a>
-              </li>
-              <li>
-                <a href="#">Register</a>
-              </li>
-            </ul>
+            <Button id="home-btn" onClick={handleLogin}>
+              Login
+            </Button>
+
+            <Button id="home-btn1" onClick={handleRegistration}>
+              Register
+            </Button>
           </div>
         </nav>
 
@@ -57,7 +70,7 @@ export default function HomeComponent() {
                 </p>
               </div>
               <img
-                src="/img/1.jpg"
+                src={project}
                 alt="Project"
                 className="card-image"
                 loading="lazy"
@@ -75,7 +88,7 @@ export default function HomeComponent() {
                 </p>
               </div>
               <img
-                src="/img/3.jpg"
+                src={inventory}
                 alt="Inventory"
                 className="card-image"
                 loading="lazy"
