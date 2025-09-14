@@ -1,61 +1,72 @@
-body{
-    background-color: rgb(237, 228, 228);
-    text-align: center;
-  }
-  .container{
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px;
-    transition: transform 0.2s;
-    width: 600px;
-    text-align: center;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  h1{
-    font-size: x-large;
-    text-align: center;
-    color: #4206a3;
-  }
-  label{
-    font-size: 15px;
-    display: block;
-    width: 100%;
-    margin-top: 8px;
-    margin-bottom: 5px;
-    text-align: left;
-    color: black;
-    font-weight: bold;
-  }
-  input{
-    display: block;
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    font-size: 12px;
-  }
-  
-  input[type="radio"] {
-    display: inline;
-    width: 10%;
-  }
-  
-  button{
-     padding: 10px 15px;
-    border-radius: 6px;
-    margin: 15px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    background-color: #6b46a6;
-    width: 40%;
-    font-size: 16px;
-  }
-  
-  button:hover{
-    background-color: #25173f;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+body {
+
+  background: linear-gradient(135deg, #E2A4EA, #98B0DF) fixed !important;
+  background-repeat: repeat-y;   
+  background-size: cover;        
+  text-align: center;
+}
+.container {
+  background-color: #f5eaf8;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  transition: transform 0.2s;
+  width: 600px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: x-large;
+  text-align: center;
+  color: #4206a3;
+}
+
+label {
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+input[type="radio"] {
+  display: inline;
+  width: 10%;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #6b46a6;
+  width: 40%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #25173f;
+}
