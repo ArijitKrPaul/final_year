@@ -10,6 +10,7 @@ export default function RegistrationComponent() {
   const [values, setValues] = useState({
     firstname: "",
     lastname: "",
+    dob:"",
     email: "",
     contact: "",
     password: "",
@@ -38,7 +39,7 @@ export default function RegistrationComponent() {
       <div className="container">
         <h1>Registration Form</h1>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="firstname">First Name*</label>
+          <label htmlFor="firstname">First Name</label>
           <input
             type="text"
             placeholder="Enter First Name"
@@ -47,7 +48,7 @@ export default function RegistrationComponent() {
             required
             value={values.firstname}
           />
-          <label htmlFor="lastname">Last Name*</label>
+          <label htmlFor="lastname">Last Name</label>
           <input
             type="text"
             placeholder="Enter Last Name"
@@ -56,7 +57,15 @@ export default function RegistrationComponent() {
             required
             value={values.lastname}
           />
-          <label htmlFor="email">Email*</label>
+          <label htmlFor="dob">Date of Birth</label>
+          <input
+            type="date"
+            name="dob"
+            onChange={handleChanges}
+            required
+            value={values.dob}
+          />
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             placeholder="Enter Email "
@@ -65,7 +74,7 @@ export default function RegistrationComponent() {
             required
             value={values.email}
           />
-          <label htmlFor="contact">Contact*</label>
+          <label htmlFor="contact">Contact</label>
           <input
             type="text"
             placeholder="Enter Phone Number"
@@ -74,7 +83,7 @@ export default function RegistrationComponent() {
             required
             value={values.contact}
           />
-          <label htmlFor="password">Password*</label>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             placeholder="Enter Password"
@@ -83,7 +92,7 @@ export default function RegistrationComponent() {
             required
             value={values.password}
           />
-          <label htmlFor="gender">Gender*</label>
+          <label htmlFor="gender">Gender</label>
           <input
             type="radio"
             name="gender"
@@ -102,7 +111,16 @@ export default function RegistrationComponent() {
             checked={values.gender === "Female"}
           />{" "}
           Female
-          <label htmlFor="deptname">Department Name*</label>
+              <input
+            type="radio"
+            name="gender"
+            onChange={(e) => handleChanges(e)}
+            required
+            value="Others"
+            checked={values.gender === "Others"}
+          />{" "}
+          Others
+          <label htmlFor="deptname">Department Name</label>
           <input
             type="text"
             placeholder="Enter Department Name"
@@ -111,43 +129,7 @@ export default function RegistrationComponent() {
             required
             value={values.deptname}
           />
-          <label htmlFor="address">Address*</label>
-          <input
-            type="text"
-            placeholder="Enter Address"
-            name="address"
-            onChange={(e) => handleChanges(e)}
-            required
-            value={values.address}
-          />
-          <label htmlFor="city">City*</label>
-          <input
-            type="text"
-            placeholder="Enter City"
-            name="city"
-            onChange={(e) => handleChanges(e)}
-            required
-            value={values.city}
-          />
-          <label htmlFor="pincode">Pincode*</label>
-          <input
-            type="number"
-            placeholder="Enter Pincode"
-            name="pincode"
-            onChange={(e) => handleChanges(e)}
-            required
-            value={values.pincode}
-          />
-          <label htmlFor="state">State*</label>
-          <input
-            type="text"
-            placeholder="Enter State"
-            name="state"
-            onChange={(e) => handleChanges(e)}
-            required
-            value={values.state}
-          />
-          <label htmlFor="country">Country*</label>
+      <label htmlFor="country">Country</label>
           <input
             type="text"
             placeholder="Enter Country"
@@ -156,12 +138,51 @@ export default function RegistrationComponent() {
             required
             value={values.country}
           />
+          <label htmlFor="state">State</label>
+          <input
+            type="text"
+            placeholder="Enter State"
+            name="state"
+            onChange={(e) => handleChanges(e)}
+            required
+            value={values.state}
+          />
+          
+          <label htmlFor="city">City</label>
+          <input
+            type="text"
+            placeholder="Enter City"
+            name="city"
+            onChange={(e) => handleChanges(e)}
+            required
+            value={values.city}
+          />
+          <label htmlFor="pincode">Pincode</label>
+          <input
+            type="number"
+            placeholder="Enter Pincode"
+            name="pincode"
+            onChange={(e) => handleChanges(e)}
+            required
+            value={values.pincode}
+          />
+          <label htmlFor="address">Address</label>
+          <input
+            type="text"
+            placeholder="Enter Address"
+            name="address"
+            onChange={(e) => handleChanges(e)}
+            required
+            value={values.address}
+          />
+          
           <button
             type="button"
             onClick={() =>
               setValues({
                 firstname: "",
                 lastname: "",
+                dob:"",
                 email: "",
                 contact: "",
                 password: "",
