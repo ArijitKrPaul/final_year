@@ -6,6 +6,7 @@ import RegistrationComponent from "./components/registrationComponent";
 import Login from "./components/loginComponent";
 import InventoryComponent from "./components/inventory";
 import HomeComponent from "./components/home";
+import DepartmentContacts from "./components/contacts";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -32,6 +33,10 @@ export default function App() {
     {
       path: "/home/inventory",
       element: <InventoryComponent />,
+    },
+    {
+      path: "/home/contacts",
+      element: <DepartmentContacts />,
     },
   ]);
   return (

@@ -21,6 +21,10 @@ export default function DashboardComponent() {
     navigate("/home/inventory");
   };
 
+  const contact = () => {
+    navigate("/home/contacts");
+  };
+
   return (
     <div>
       <HeaderComponent />
@@ -97,7 +101,7 @@ export default function DashboardComponent() {
             </CardContent>
             <Divider />
             <CardActions className="dashboard-btns-area">
-              <Button size="small" className="dashboard-btns">
+              <Button size="small" className="dashboard-btns" onClick={contact}>
                 Contact Departments
               </Button>
             </CardActions>

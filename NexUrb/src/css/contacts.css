@@ -1,0 +1,84 @@
+/* DepartmentContacts.css */
+.department-contacts-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.department-contacts-container h1 {
+  text-align: center;
+  color: #0056b3;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.department-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.department-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.department-card h2 {
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.department-card p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+.department-card p strong {
+  color: #555;
+}
+
+.department-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.department-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .department-contacts-container h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .departments-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    gap: 20px;
+  }
+
+  .department-card {
+    padding: 20px;
+  }
+
+  .department-card h2 {
+    font-size: 1.5em;
+  }
+}

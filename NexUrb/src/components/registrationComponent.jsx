@@ -10,7 +10,7 @@ export default function RegistrationComponent() {
   const [values, setValues] = useState({
     firstname: "",
     lastname: "",
-    dob:"",
+    dob: "",
     email: "",
     contact: "",
     password: "",
@@ -111,7 +111,7 @@ export default function RegistrationComponent() {
             checked={values.gender === "Female"}
           />{" "}
           Female
-              <input
+          <input
             type="radio"
             name="gender"
             onChange={(e) => handleChanges(e)}
@@ -129,7 +129,7 @@ export default function RegistrationComponent() {
             required
             value={values.deptname}
           />
-      <label htmlFor="country">Country</label>
+          <label htmlFor="country">Country</label>
           <input
             type="text"
             placeholder="Enter Country"
@@ -147,7 +147,6 @@ export default function RegistrationComponent() {
             required
             value={values.state}
           />
-          
           <label htmlFor="city">City</label>
           <input
             type="text"
@@ -175,14 +174,13 @@ export default function RegistrationComponent() {
             required
             value={values.address}
           />
-          
           <button
             type="button"
             onClick={() =>
               setValues({
                 firstname: "",
                 lastname: "",
-                dob:"",
+                dob: "",
                 email: "",
                 contact: "",
                 password: "",
