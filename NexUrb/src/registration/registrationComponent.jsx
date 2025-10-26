@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import "../css/registration.css";
-import HeaderComponent from "./HeaderComponent";
-import FooterComponent from "./footerComponent";
+import "./registration.css";
+import HeaderComponent from "../components/HeaderComponent";
+import FooterComponent from "../components/footerComponent";
 import { useNavigate } from "react-router-dom";
 
 export default function RegistrationComponent() {

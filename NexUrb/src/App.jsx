@@ -1,11 +1,13 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import DashboardComponent from "./components/dashboardComponent";
-import ProjectComponent from "./components/projectComponent";
-import RegistrationComponent from "./components/registrationComponent";
-import Login from "./components/loginComponent";
-import InventoryComponent from "./components/inventory";
-import HomeComponent from "./components/home";
+import DashboardComponent from "../src/dashboard/dashboardComponent";
+import ProjectComponent from "../src/project/projectComponent";
+import RegistrationComponent from "../src/registration/registrationComponent";
+import Login from "../src/login/loginComponent";
+import InventoryComponent from "../src/inventory/inventory";
+import HomeComponent from "./home/home";
+import DepartmentsPage from "../src/contacts/contact";
+import UserDetailsComponent from "../src/user/userdetails";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -32,6 +34,14 @@ export default function App() {
     {
       path: "/home/inventory",
       element: <InventoryComponent />,
+    },
+        {
+      path: "/home/contact",
+      element: <DepartmentsPage />,
+    },
+    {
+      path: "/home/userdetails",
+      element: <UserDetailsComponent />,
     },
   ]);
   return (

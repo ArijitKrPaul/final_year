@@ -1,9 +1,9 @@
-import HeaderComponent from "./HeaderComponent";
+import HeaderComponent from "../components/HeaderComponent";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import { DataGrid } from "@mui/x-data-grid";
-import FooterComponent from "./footerComponent";
-import "../css/inventory.css";
+import FooterComponent from "../components/footerComponent";
+import "./inventory.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCirclePlus,

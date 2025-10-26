@@ -1,4 +1,4 @@
-import "../css/home.css";
+import "./home.css";
 import project from "../assets/1.jpg";
 import inventory from "../assets/3.jpg";
 import earth from "../assets/2.mp4";

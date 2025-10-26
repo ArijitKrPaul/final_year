@@ -15,7 +15,7 @@ body{
     height: 55px;
     background-color: #6b46a6;
     color: white;
-    position: static;
+    position: bottom;
     justify-content: center;
 }
 

@@ -13,15 +13,17 @@ html, body {
 }
 
 .main-container{
-    margin-bottom: 60px;
+    height: 100%;
+    background-color: antiquewhite;
 }
 #notice-board{
     height: 51vh;
     display: flex;
     background-color:antiquewhite;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
     text-align: left;
+    /* margin-bottom: 64px; */
 }
 
 #notice-area{

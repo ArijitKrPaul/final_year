@@ -1,0 +1,64 @@
+html,body{
+    height:100%;
+}
+#userdetails-cotnainer{
+    background-color: black;
+    margin-top: 100px;
+}
+.container {
+  width: 60%;
+  margin: 40px auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.details-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+}
+
+.detail-item strong {
+  color: #222;
+  width: 40%;
+}
+
+.detail-item span {
+  color: #555;
+  width: 60%;
+  text-align: right;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

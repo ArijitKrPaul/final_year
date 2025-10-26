@@ -30,8 +30,8 @@ library.add(fas, far, fab);
 
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
-import "../css/project.css";
-import FooterComponent from "./footerComponent";
+import "./project.css";
+import FooterComponent from "../components/footerComponent";
 
 export default function ProjectComponent() {
   const [state, setState] = React.useState("");
