@@ -23,7 +23,7 @@ export default function InventoryComponent() {
   const [open2, setOpen2] = React.useState(false);
   const [del, setDel] = React.useState("");
   const errorp = document.getElementsByTagName("p")[3];
-//comment
+
   const handleOpen = (e) => {
     setOpen(true);
     console.log(e);
