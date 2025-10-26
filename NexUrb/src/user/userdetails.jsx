@@ -28,13 +28,14 @@ export default function UserDetailsComponent() {
   };
 
   return (
-    <div>
+    <div className="page-wrapper">
       <HeaderComponent />
 
       <div id="userdetails-container">
         <Card
           sx={{
-            maxWidth: 700,
+             width: "80%",        
+             maxWidth: "900px", 
             margin: "40px auto",
             padding: "20px",
             boxShadow: 3,
@@ -112,3 +113,5 @@ export default function UserDetailsComponent() {
     </div>
   );
 }
+
+
