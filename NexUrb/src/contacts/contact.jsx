@@ -57,10 +57,10 @@ const DepartmentsPage = () => {
         {departmentsData.map((department, index) => (
               <div className="department-card" key={index}>
                 <h3>{department.name}</h3>
-                <p>Email: {department.email}</p>
-                <p>Phone: {department.phone}</p>
-                <p>Address: {department.address}</p>
-                <p>Hours: {department.hours}</p>
+                <p><strong>Email:</strong> {department.email}</p>
+                <p><strong>Phone</strong> {department.phone}</p>
+                <p><strong>Address:</strong>{department.address}</p>
+                <p><strong>Hours:</strong> {department.hours}</p>
             </div>
         ))}
       </div>
