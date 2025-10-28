@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function DashboardComponent() {
   const navigate = useNavigate();
-  //checking something again
+
   const changeproject = () => {
     navigate("/home/project");
   };
