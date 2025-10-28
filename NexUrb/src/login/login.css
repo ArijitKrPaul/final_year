@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 80%;
+    height: 100%;
     width: 100%;
     background: antiquewhite; 
     background-size: cover;
@@ -24,7 +24,7 @@ body {
     border-radius: 10px;
     padding: 4px 40px;
     margin: 150px auto;
-    margin-bottom: 230px;
+    margin-bottom: 250px;
 }
 
 .wrapper h2{

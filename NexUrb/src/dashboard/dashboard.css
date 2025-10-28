@@ -10,9 +10,10 @@ html, body {
     padding-top: 40px;
     display: flex;
     justify-content: center;
-}
-
+} 
+    
 .main-container{
+    height: 810px;
     background-color: antiquewhite;
 }
 #notice-board{
@@ -20,10 +21,10 @@ html, body {
     display: flex;
     background-color:antiquewhite;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     text-align: left;
-    margin-top: 30px;
-
+    margin-bottom: 64px;
+    margin-top: 50px;
 }
 
 #notice-area{
@@ -55,4 +56,15 @@ html, body {
     cursor:pointer;
     background-color:#6b46a6;
     color: white;
+}
+@media screen and (max-width: 1024px){
+    #home-card-area{
+        height:40vh;
+    }
+    .dashboard-btns-area{
+        padding-top: 5px;
+    }
+    .cards{
+        height: 270px;
+    }
 }

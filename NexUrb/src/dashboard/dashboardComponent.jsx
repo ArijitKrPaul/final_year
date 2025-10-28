@@ -1,12 +1,12 @@
-import "../css/dashboard.css";
-import FooterComponent from "./footerComponent";
+import "./dashboard.css";
+import FooterComponent from "../components/footerComponent";
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import HeaderComponent from "./HeaderComponent";
+import HeaderComponent from "../components/HeaderComponent";
 import Divider from "@mui/material/Divider";
 import { useNavigate } from "react-router-dom";
 
@@ -20,9 +20,11 @@ export default function DashboardComponent() {
   const changeInventory = () => {
     navigate("/home/inventory");
   };
-
-  const contact = () => {
-    navigate("/home/contacts");
+  const contactPage = () => {
+    navigate("/home/contact");
+  };
+  const changeUserDetails = () => {
+    navigate("/home/userdetails");
   };
 
   return (
@@ -84,8 +86,12 @@ export default function DashboardComponent() {
             </CardContent>
             <Divider />
             <CardActions className="dashboard-btns-area">
-              <Button size="small" className="dashboard-btns">
-                Learn More
+              <Button
+                size="small"
+                className="dashboard-btns"
+                onClick={changeUserDetails}
+              >
+                USER
               </Button>
             </CardActions>
           </Card>
@@ -101,7 +107,11 @@ export default function DashboardComponent() {
             </CardContent>
             <Divider />
             <CardActions className="dashboard-btns-area">
-              <Button size="small" className="dashboard-btns" onClick={contact}>
+              <Button
+                size="small"
+                className="dashboard-btns"
+                onClick={contactPage}
+              >
                 Contact Departments
               </Button>
             </CardActions>

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Toolbar from "@mui/material/Toolbar";
-import "../css/login.css";
+import "../login/login.css";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import HeaderComponent from "./HeaderComponent";
-import FooterComponent from "./footerComponent";
+import HeaderComponent from "../components/HeaderComponent";
+import FooterComponent from "../components/footerComponent";
 import { useNavigate } from "react-router-dom";
 
 function LoginComponent() {
