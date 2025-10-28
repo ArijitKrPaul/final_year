@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function DashboardComponent() {
   const navigate = useNavigate();
-
+  //checking something again
   const changeproject = () => {
     navigate("/home/project");
   };
@@ -24,9 +24,9 @@ export default function DashboardComponent() {
     navigate("/home/contact");
   };
   const changeUserDetails = () => {
-  navigate("/home/userdetails");
-};
-  
+    navigate("/home/userdetails");
+  };
+
   return (
     <div>
       <HeaderComponent />
@@ -86,14 +86,18 @@ export default function DashboardComponent() {
             </CardContent>
             <Divider />
             <CardActions className="dashboard-btns-area">
-              <Button size="small" className="dashboard-btns" onClick={changeUserDetails}>
+              <Button
+                size="small"
+                className="dashboard-btns"
+                onClick={changeUserDetails}
+              >
                 USER
               </Button>
             </CardActions>
           </Card>
           <Card sx={{ maxWidth: 345 }} className="cards">
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div" >
+              <Typography gutterBottom variant="h5" component="div">
                 Contact
               </Typography>
               <Typography variant="body2" sx={{ color: "text.secondary" }}>
@@ -103,8 +107,11 @@ export default function DashboardComponent() {
             </CardContent>
             <Divider />
             <CardActions className="dashboard-btns-area">
-              <Button size="small" className="dashboard-btns" onClick={contactPage}>
-
+              <Button
+                size="small"
+                className="dashboard-btns"
+                onClick={contactPage}
+              >
                 Contact Departments
               </Button>
             </CardActions>
